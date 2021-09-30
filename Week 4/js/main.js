@@ -44,3 +44,8 @@ function correctTail(body, tail){
     return false
     }
 }
+
+// The code gives an error!
+
+var a = "123";
+a.toString()
