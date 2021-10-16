@@ -53,3 +53,15 @@ function removeChar(str){
  //You got this!
  return str.slice(1, str.length - 1)
 };
+
+//You get an array of numbers, return the sum of all of the positives ones.
+
+function positiveSum(arr) {
+   var s = 0;
+ for(var i = 0; i < arr.length; i++) {
+   if(arr[i] > 0) {
+    s += arr[i];
+  }
+ }
+return s;
+}
