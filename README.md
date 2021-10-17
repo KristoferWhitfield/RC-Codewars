@@ -1,2 +1,2 @@
 # RC-Codewars
-Where I put my codewars for RC
+This is the repository where I put my code wars.
