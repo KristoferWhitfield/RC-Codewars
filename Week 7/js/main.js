@@ -24,7 +24,7 @@ function countSheeps(arrayOfSheep) {
     return count
 }
 
-// It's the academic year's end, fateful moment of your school report. The averages 
+// It's the academic year's end, fateful moment of your school report. The averages
 // must be calculated. All the students come to you and entreat you to calculate
 // their average for them. Easy ! You just need to write a script.
 //
@@ -33,4 +33,29 @@ function countSheeps(arrayOfSheep) {
 function getAverage(marks){
   //TODO : calculate the downward rounded average of the marks array
   return Math.floor(marks.reduce((x, y) => x + y) / marks.length)
+}
+
+// After a hard quarter in the office you decide to get some rest on a vacation.
+// So you will book a flight for you and your girlfriend and try to leave all the
+//  mess behind you.
+//
+// You will need a rental car in order for you to get around in your vacation.
+// The manager of the car rental makes you some good offers.
+//
+// Every day you rent the car costs $40. If you rent the car for 7 or more days,
+// you get $50 off your total. Alternatively, if you rent the car for 3 or more days,
+// you get $20 off your total.
+//
+// Write a code that gives out the total amount for different days(d).
+
+function rentalCarCost(d) {
+  // Your solution here
+
+  if(d >= 7){
+    return d * 40 - 50
+  } else if (d >=3){
+    return d * 40 - 20
+  } else {
+    return d * 40
+  }
 }
