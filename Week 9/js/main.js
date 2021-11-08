@@ -37,3 +37,10 @@ function abbrevName(name){
     // code away
 
 }
+
+// Return the Nth Even Number
+
+function nthEven(n){
+  // your code here
+return (n - 1) * 2
+}
