@@ -40,3 +40,17 @@ function mergeArrays(a, b) {
 
   return result.filter((value) => value !== undefined);
 }
+
+// Write a function, gooseFilter / goose-filter / goose_filter / GooseFilter,
+//  that takes an array of strings as an argument and returns a filtered array
+//  containing the same elements but with the 'geese' removed.
+
+ //birds  an array with strings of words in it
+//need a new array to be returned with the geese strings removed from it
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+//can use filter to give me a new array with out the geese string in it
+//need a way to say i dont want geese inside my new array
+  return birds.filter(x => !geese.includes(x))
+  // return an array containing all of the strings in the input array except those that match strings in geese
+};
