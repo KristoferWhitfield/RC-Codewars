@@ -54,3 +54,21 @@ function gooseFilter (birds) {
   return birds.filter(x => !geese.includes(x))
   // return an array containing all of the strings in the input array except those that match strings in geese
 };
+
+// Simple challenge - eliminate all bugs from the supplied code so that the code
+// runs and outputs the expected value. Output should be the length of the longest
+// word, as a number.
+
+function findLongest(str) { 
+
+  var spl = str.split(" ");
+  var longest = 0
+
+  for (let i = 0; i < spl.length; i++) {
+    if (spl[i].length > longest) {
+      longest = spl[i].length
+    }
+
+    }
+   return longest
+}
