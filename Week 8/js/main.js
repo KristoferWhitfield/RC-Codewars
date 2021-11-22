@@ -30,9 +30,9 @@ function removeExclamationMarks(s) {
 //is repeated once.
 
 function doubleChar(str) {
-  var newString = "";
+  var dog = "";
   for( i = 0; i < str.length; i++) {
-    newString += str[i] + str[i];
+    dog += str[i] + str[i];
   }
   return newString;
 }
