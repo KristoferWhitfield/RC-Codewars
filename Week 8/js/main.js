@@ -14,7 +14,7 @@ function arrayPlusArray(arr1, arr2) {
 }
 
 //Complete the solution so that it reverses all of the words within the string
- passed in.
+// passed in.
 
  function reverseWords(str){
     return str.split(' ').reverse().join(' ')
@@ -26,6 +26,18 @@ function removeExclamationMarks(s) {
   return s.replace(/!/g,'');
   }
 
+  function removeExclamationMarksFromEnd(inputString) {
+  let result = inputString;
+
+  // run this loop while the last character is a `!`
+  while (result[result.length - 1] === "!") {
+    // remove the last character (= `!`)
+    result = result.slice(0, -1);
+  }
+
+  return result;
+}
+
 //Given a string, you have to return a string in which each character (case-sensitive)
 //is repeated once.
 
@@ -34,5 +46,5 @@ function doubleChar(str) {
   for( i = 0; i < str.length; i++) {
     dog += str[i] + str[i];
   }
-  return newString;
+  return dog;
 }
