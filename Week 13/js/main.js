@@ -47,7 +47,8 @@ familyAges([22,3,11,29,45])
 //the array will be in the params
 // delcare a function that is adding up the the numbers in the [ ] execpet  10 ,  1
 // ex. [ 1, 6, 2,  8, 10 ] => 2+6+8=> 16
-// first declare a function that adds the num and returns the sum , within the function have to declare a var and assign to the arr.sort() that will output
+// first declare a function that adds the num and returns the sum , within the
+// function have to declare a var and assign to the arr.sort() that will output
 
 // declare a function that returns the sum of the array;decare a variable(numbers1) and assign it to arr.sort to sort in ascending order.;declare a variable assign it to numbers1.slice(1,-1)=> that will remove the lowest and highest numbers. declare the finalOutput var and use a reduce method to sum the numbers in the array.
 function addNumbers(arr){
