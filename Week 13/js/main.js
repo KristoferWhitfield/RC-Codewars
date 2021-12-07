@@ -59,3 +59,103 @@ let finalNumbers = numbers2.reduce((a,b) => a + b)
 console.log(finalNumbers)
 }
 addNumbers([22,3,4,14,32])
+
+
+// =========set 2 problem 1========>>
+// Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+// were passing in a string
+// retrun the string with the first and last letters removed if the string is less than 2 letters, retrun the string
+
+function middleString(string){
+
+//we can use the slice method (1, string length -1)
+//we can set up a conditional that if the string lenght
+// is < 2, return the string
+
+if(string.length <= 2){
+  return string
+} else {
+
+  return string.slice(1, string.length -1 )
+}
+
+
+
+}
+
+
+
+middleString("puppy")
+
+
+
+
+// Create a function that alternates the case of a given string.
+// Ex. HeLLo WoRLd => hEllO wOrlD
+
+//passing in a string
+// returning every other character as Upper case
+// ex. (teST => TEst)
+// things to consider using:
+//char at , toUpperCase or toLowerCase, a for loop
+// create a for loop that gets the previous character and if the previous character is an upper case, then converte it to a lower case
+// else if the previous character is a lowercase then we convert it to an upper case
+
+//return the result
+
+function alternativeLetters(string) {
+  let results = ''
+  for (let i = 0; i < string.length; i++) {
+    if (string.charAt(i) === string.charAt(i).toLowerCase()) {
+      results += string.charAt(i).toUpperCase()
+    }
+    else if (string.charAt(i) === string.charAt(i).toUpperCase()) {
+      results += string.charAt(i).toLowerCase()
+    }
+
+  }
+
+  //puts all the answers to the results empty string
+
+  return results
+  console.log(results, 'results2')
+
+}
+console.log(alternativeLetters('HapPY'), 'tester')
+
+
+
+// ========problem 3========
+
+// Create a function that will return a string that combines all of the letters of the three inputed strings in groups. Taking the first letter of all of the inputs and grouping them next to each other. Do this for every letter, see example below!
+
+// Ex. Input: "aa", "bb" , "cc" => Output: "abcabc"
+// Ex. Input: "qwe", "kcx" , "hwq" => Output: "qkhwcwexq"
+
+// Note: You can expect all of the inputs to be the same length.
+
+
+// there will be 3 strings with groups of letters
+// the first letter of each group will be added and be put at the beginning of the new string
+
+function threeStrings(stringOne, stringTwo, stringThree){
+
+let newString = []
+let s1 = stringOne.split('')
+let s2 = stringTwo.split('')
+let s3 = stringThree.split('')
+
+console.log(s1,'=s1', s2, '=s2', s3, '=s3')
+
+for(let i = 0; i < s1.length; i++){
+newString += s1[i] + s2[i] + s3[i]
+}
+console.log(newString, "= new string")
+
+
+}
+
+// newString += s1.charAt(i) + s2.charAt(i) + s3.charAt(i)
+
+threeStrings("hah","ele","yly")
