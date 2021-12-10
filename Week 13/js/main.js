@@ -210,3 +210,23 @@ for(let i = 0; i < nums.length; i++){
 }
 
 twoSums([2, 5, 7, 9], 7)
+
+
+
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot separating them.
+
+It should look like this:
+
+
+function abbrevName(name){
+let splitName = name.split(' ')
+    let firstName = splitName.shift()
+    let lastName = splitName.pop()
+    let initials = []
+    initials.push(firstName[0].toUpperCase() + '.' + lastName[0].toUpperCase())
+
+    console.log(initials, 'initials?')
+    return initials.toString()
+}
