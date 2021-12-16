@@ -230,3 +230,33 @@ let splitName = name.split(' ')
     console.log(initials, 'initials?')
     return initials.toString()
 }
+
+
+// the numbers are always going to be whole
+// the numbers can be repeated
+// theyll always be passed in as integers
+// the numbers will always be one array of 10 integers
+// the numbers will be sorted in the order intended
+// everytime the number is entered, it needs to be in an unique order(**)
+function createPhoneNumber(numbers){
+
+
+//adding the parn. to the specific idx that ill reflect in the answer string
+  //[2,2,4,5,6,8,1,0,0,4]
+numbers.splice(0,1,"(",numbers[0])
+//[(,2,2,4,5,6,8,1,0,0,4]
+numbers.splice(4,1,") ",numbers[4])
+//[(,2,2,4,) ,5,6,8,1,0,0,4]
+numbers.splice(8,1,"-", numbers[8])
+//i can push the spc characters at the proper idx.
+
+//i can join the array and add quotations to both sides to make it a string in my variable
+let phoneNumber =  numbers.join("")
+console.log(phoneNumber)
+ return phoneNumber
+}
+// retrun a string with the numbers placed in phone number format
+//the number needs to be  3 groups first with paren space dash
+// the number will need to be in order of the way it was passed into a paramater
+
+//[2,2,4,5,6,8,1,0,0,4] ==> "(224) 568-1004"
