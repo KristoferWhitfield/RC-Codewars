@@ -5,4 +5,4 @@ add punctuation, but you should add spaces between each word. Be careful, there
 
  function smash (words) {
    return words.join(" ")
-};
+}
