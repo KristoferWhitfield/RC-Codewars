@@ -20,7 +20,7 @@ function otherAngle(a, b) {
   return 180-(a+b)
 }
 
-// Bob needs a fast way to calculate the volume of a cuboid with three values: 
+// Bob needs a fast way to calculate the volume of a cuboid with three values:
 // length, width and the height of the cuboid. Write a function to help Bob with
 // this calculation.
 
@@ -28,4 +28,11 @@ class Kata {
   static getVolumeOfCuboid(length, width, height) {
     return length* width*height
   }
+}
+
+// Complete the function to return his total number of goals in all three leagues.
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  return laLigaGoals+ copaDelReyGoals+ championsLeagueGoals
 }
