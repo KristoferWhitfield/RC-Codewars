@@ -37,11 +37,18 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals+ copaDelReyGoals+ championsLeagueGoals
 }
 
-// I created this function to add five to any number that was passed in to 
+// I created this function to add five to any number that was passed in to
 // it and return the new value. It doesn't throw any errors but it returns
 // the wrong number.
 
 function addFive(num) {
   var total = num + 5
   return total
+}
+// In this kata you will create a function that takes in a list and returns 
+// a list with the reverse order.
+
+function reverseList(list) {
+
+  return list.reverse()
 }
