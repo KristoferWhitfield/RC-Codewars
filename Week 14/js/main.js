@@ -45,10 +45,18 @@ function addFive(num) {
   var total = num + 5
   return total
 }
-// In this kata you will create a function that takes in a list and returns 
+// In this kata you will create a function that takes in a list and returns
 // a list with the reverse order.
 
 function reverseList(list) {
 
   return list.reverse()
 }
+
+// Create these three variables and store the appropriate values using the table above:
+
+var laLigaGoals = 43
+var championsLeagueGoals = 10
+var copaDelReyGoals = 5
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
