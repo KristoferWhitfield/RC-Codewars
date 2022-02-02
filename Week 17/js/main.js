@@ -31,8 +31,8 @@ function checkAlive (health) {
   }
 }
 
-Create a combat function that takes the player's current health and the amount
-of damage recieved, and returns the player's new health. Health can't be less than 0.
+// Create a combat function that takes the player's current health and the amount
+// of damage recieved, and returns the player's new health. Health can't be less than 0.
 
 function combat(health, damage) {
   // Write your code here
@@ -44,13 +44,13 @@ function combat(health, damage) {
   }
 }
 
-This is the first step to understanding FizzBuzz.
-
-Your inputs: a positive integer, n, greater than or equal to one. n is provided, you have NO CONTROL over its value.
-
-Your expected output is an array of positive integers from 1 to n (inclusive).
-
-Your job is to write an algorithm that gets you from the input to the output.
+// This is the first step to understanding FizzBuzz.
+//
+// Your inputs: a positive integer, n, greater than or equal to one. n is provided, you have NO CONTROL over its value.
+//
+// Your expected output is an array of positive integers from 1 to n (inclusive).
+//
+// Your job is to write an algorithm that gets you from the input to the output.
 
 function preFizz(n) {
 
