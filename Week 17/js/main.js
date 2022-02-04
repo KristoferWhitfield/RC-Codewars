@@ -60,4 +60,4 @@ function preFizz(n) {
     array.push(i)
   }
   return array
-}
+}.
