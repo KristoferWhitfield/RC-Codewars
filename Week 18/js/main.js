@@ -13,3 +13,11 @@ var findAverage = function (nums) {
   // ...
   return arr.includes(item)
 }
+
+This function should return an object, but it's not doing what's intended.
+
+function mystery() {
+  const results = {sanity: 'Hello'}
+
+  return results
+}
