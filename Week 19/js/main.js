@@ -1,23 +1,14 @@
-// Find the mean (average) of a list of numbers in an array.
+Create a function that takes a string and an integer (n).
 
-var findAverage = function (nums) {
-  // Code here
-  const apple = nums.reduce((a, b) => a + b)
-  return apple / nums.length
-}
+The function should return a string that repeats the input string n number of times.
 
-// Create a method that accepts a list and an item, and returns true if the
-//  item belongs to the list, otherwise false.
+If anything other than a string is passed in you should return "Not a string"
 
- function include(arr, item){
-  // ...
-  return arr.includes(item)
-}
+var repeatIt = function(str, n) {
 
-// This function should return an object, but it's not doing what's intended.
-
-function mystery() {
-  const results = {sanity: 'Hello'}
-
-  return results
-}
+    if(typeof str != 'string'){
+      return "Not a string"
+      } else {
+        return str.repeat(n)
+        }
+  }
