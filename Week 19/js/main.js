@@ -12,3 +12,11 @@ var repeatIt = function(str, n) {
         return str.repeat(n)
         }
   }
+
+  Create a function named combineNames that accepts two parameters (first and last name).
+   The function should return the full name.
+
+   function combineNames(first, last){
+
+  return first + " " + last
+}
